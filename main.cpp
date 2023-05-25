@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include "math.h"
 
 using namespace std;
@@ -38,7 +37,9 @@ int main() {
     }while(err >= 1e-6);
 
     if((err < 1e-6)||(tag == true)){
-        cout<<fixed<<setprecision(3)<<x<<endl;
+        
+        cout.precision(4);
+        cout<<x<<endl;
     }
     return 0;
 }
